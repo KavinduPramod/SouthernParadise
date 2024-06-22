@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navigationbar = () => {
   return (
-    <Navbar bg="black" variant="dark" expand="lg" className="py-3">
+    <Navbar bg="black" variant="dark" expand="lg" className="py-3 sticky-top">
       <Container>
         <Navbar.Brand
           as={Link}
