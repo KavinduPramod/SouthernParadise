@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="min-vh-100 bg-black">
       <Carousel className="m-2">
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100"
             src={CarouselImage1}
@@ -31,7 +31,7 @@ const Hero = () => {
               Prime land for sale in Matara
             </h3>
             <p style={{ color: "#ddd" }}>
-              Just minutes away from the beautiful beach{" "}
+              Just minutes away from the beautiful beach
             </p>
             <Button
               variant="outline-light"
@@ -45,41 +45,7 @@ const Hero = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item interval={1000}>
-          <img
-            className="d-block w-100"
-            src={CarouselImage1}
-            alt="First slide"
-          />
-          <Carousel.Caption
-            style={{
-              bottom: "50%",
-              transform: "translateY(50%)",
-              textAlign: "center",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
-              padding: "10px",
-              borderRadius: "10px",
-            }}
-          >
-            <h3 style={{ color: "#fff", fontWeight: "bold" }}>
-              Prime land for sale in Matara
-            </h3>
-            <p style={{ color: "#ddd" }}>
-              Just minutes away from the beautiful beach{" "}
-            </p>
-            <Button
-              variant="outline-light"
-              className="m-2 fw-bold"
-              size="lg"
-              as={Link}
-              to="/land"
-            >
-              More Details
-            </Button>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100"
             src={CarouselImage2}
@@ -113,7 +79,7 @@ const Hero = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100"
             src={CarouselImage3}
@@ -130,7 +96,7 @@ const Hero = () => {
             }}
           >
             <h3 style={{ color: "#fff", fontWeight: "bold" }}>
-              Feel the beauty of Nilwala
+              Beauty of Nilwala
             </h3>
             <p style={{ color: "#ddd" }}>
               This stunning property offers breathtaking views of the Nilwala
