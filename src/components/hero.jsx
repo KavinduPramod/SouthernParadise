@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="min-vh-100 bg-black">
+    <div className="bg-black">
       <Carousel className="m-2">
         <Carousel.Item interval={3000}>
           <img

@@ -86,7 +86,7 @@ const Footer = () => {
               <i className="bi bi-telephone-fill"></i> +94 76 813 7825
             </p>
             <p>
-              <i className="bi bi-envelope-fill"></i> 0Pjv6@example.com
+              <i className="bi bi-envelope-fill"></i> Brayanivaneesha@gmail.com
             </p>
             <div>
               <a href="https://www.facebook.com" className="text-light me-3">
