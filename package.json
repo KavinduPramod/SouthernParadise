@@ -28,5 +28,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/KavinduPramod/SouthernParadise.git",
+  "author": "Kavindu Pramod <kavindu.20210410@iit.ac.lk>",
+  "license": "MIT"
 }
