@@ -5,12 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navigationbar = () => {
   return (
-    <Navbar bg="black" variant="dark" expand="lg" className="py-3 sticky-top">
+    <Navbar bg="dark" variant="dark" expand="lg" className="py-3 sticky-top">
       <Container>
         <Navbar.Brand
           as={Link}
           to="/"
-          className="fs-3 fw-bold"
+          className="fs-3 fw-bold text-info"
           style={{ fontFamily: "Brush Script MT, Brush Script Std, cursive" }}
         >
           Southern Paradise
@@ -21,32 +21,38 @@ const Navigationbar = () => {
             <Nav.Link
               as={Link}
               to="/"
-              className="fs-5"
-              style={{ fontFamily: "URW Chancery L, cursive" }}
+              className="fs-5 "
+              style={{ fontFamily: "URW Chancery L, cursive", color: "red" }}
             >
               Home
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/about"
+              to="/propertyInfo"
               className="fs-5"
-              style={{ fontFamily: "URW Chancery L, cursive" }}
+              style={{
+                fontFamily: "URW Chancery L, cursive",
+                color: "chartreuse",
+              }}
             >
-              About
+              Property Info
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/contact"
               className="fs-5"
-              style={{ fontFamily: "URW Chancery L, cursive" }}
+              style={{ fontFamily: "URW Chancery L, cursive", color: "yellow" }}
             >
               Contact
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/land"
+              to="/land "
               className="fs-5"
-              style={{ fontFamily: "URW Chancery L, cursive" }}
+              style={{
+                fontFamily: "URW Chancery L, cursive",
+                color: "Fuchsia",
+              }}
             >
               Land
             </Nav.Link>

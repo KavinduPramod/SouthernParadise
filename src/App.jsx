@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import About from "./pages/about";
+import PropertyInfo from "./pages/propertyInfo"; // Corrected the casing of the file name
 import Contact from "./pages/contact";
 import Land from "./pages/land";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="propertyInfo" element={<PropertyInfo />} />
       <Route path="contact" element={<Contact />} />
       <Route path="land" element={<Land />} />
     </Routes>
