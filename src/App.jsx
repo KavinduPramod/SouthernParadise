@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import PropertyInfo from "./pages/PropertyInfo";
+import PropertyInfo from "./pages/propertyInfo";
 import Contact from "./pages/contact";
 import Land from "./pages/land";
 

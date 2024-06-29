@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const PropertyInfo = () => {
+const propertyInfo = () => {
   const [perchAmount, setPerchAmount] = useState(7500000);
   const [priceInCurrency, setPriceInCurrency] = useState(null);
   const [exchangeRates, setExchangeRates] = useState({});
@@ -184,4 +184,4 @@ const PropertyInfo = () => {
   );
 };
 
-export default PropertyInfo;
+export default propertyInfo;
