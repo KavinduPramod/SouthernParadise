@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="container">
         <div className="row">
           <div className="col-12 col-md-3 mb-3">
-            <h5>Quick Links</h5>
+            <h5 className="text-primary">Quick Links</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="/" className="nav-link p-0 text-light">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-3 mb-3">
-            <h5>More Locations</h5>
+            <h5 className="text-success">More Locations</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <a
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-4 mb-3">
-            <h5>Contact Us</h5>
+            <h5 className="text-warning">Contact Us</h5>
             <p>
               <i className="bi bi-telephone-fill"></i> +94 76 813 7825
             </p>
