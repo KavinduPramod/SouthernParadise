@@ -91,7 +91,9 @@ const propertyInfo = () => {
           <div className="card bg-secondary text-light mb-4">
             <div className="card-body">
               <h5 className="card-title">Address</h5>
-              <p className="card-text">1/2, ABC Street, Colombo, Sri Lanka</p>
+              <p className="card-text">
+                No,92, Wilfred Gunasekara Mawatha , Fort , Matara, Sri lanka,
+              </p>
             </div>
           </div>
           <h4 className="text-info">Price per Perch</h4>

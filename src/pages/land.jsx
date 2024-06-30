@@ -32,22 +32,22 @@ const land = () => {
       height: 3,
     },
     {
+      src: Image16,
+      width: 4,
+      height: 3,
+    },
+    {
+      src: Image17,
+      width: 4,
+      height: 3,
+    },
+    {
       src: Image2,
       width: 4,
       height: 3,
     },
     {
-      src: Image3,
-      width: 4,
-      height: 3,
-    },
-    {
       src: Image4,
-      width: 4,
-      height: 3,
-    },
-    {
-      src: Image5,
       width: 4,
       height: 3,
     },
@@ -58,7 +58,7 @@ const land = () => {
     },
     {
       src: Image7,
-      width: 4,
+      width: 3,
       height: 3,
     },
     {
@@ -78,12 +78,12 @@ const land = () => {
     },
     {
       src: Image11,
-      width: 4,
+      width: 3,
       height: 3,
     },
     {
       src: Image12,
-      width: 4,
+      width: 5,
       height: 3,
     },
     {
@@ -102,12 +102,12 @@ const land = () => {
       height: 3,
     },
     {
-      src: Image16,
+      src: Image3,
       width: 4,
       height: 3,
     },
     {
-      src: Image17,
+      src: Image5,
       width: 4,
       height: 3,
     },
