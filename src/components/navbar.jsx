@@ -11,7 +11,7 @@ const Navigationbar = () => {
           as={Link}
           to="/"
           className="fs-3 fw-bold text-info"
-          style={{ fontFamily: "Brush Script MT, Brush Script Std, cursive" }}
+          style={{ fontFamily: "Palatino, URW Palladio L, serif" }}
         >
           Prime Land For Sale
         </Navbar.Brand>
