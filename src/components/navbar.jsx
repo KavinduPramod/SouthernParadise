@@ -13,7 +13,7 @@ const Navigationbar = () => {
           className="fs-3 fw-bold text-info"
           style={{ fontFamily: "Brush Script MT, Brush Script Std, cursive" }}
         >
-          Southern Paradise
+          Prime Land For Sale
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
