@@ -161,6 +161,23 @@ const propertyInfo = () => {
             </div>
           )}
         </div>
+        <div className="card bg-dark border-light m-5">
+          <div className="card-body">
+            <h5 className="card-title text-light">
+              Location Map of the Property
+            </h5>
+            <iframe
+              title="Property Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.3602678650827!2d80.54036707453605!3d5.94498902961655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13f2abba16caf%3A0xad11743219501140!2s31%20Wilfred%20Gunasekera%20Mawatha%2C%20Matara!5e0!3m2!1sen!2slk!4v1720264997955!5m2!1sen!2slk"
+              width="100%"
+              height="600"
+              style={{ border: "0" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
         <div className="mb-5">
           <h4 className="text-info">Way to the property</h4>
           <div className="ratio ratio-16x9">
