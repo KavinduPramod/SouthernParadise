@@ -1,28 +1,33 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselImage1 from "../assets/matara.jpg";
-import CarouselImage2 from "../assets/fort.jpg";
-import CarouselImage3 from "../assets/nilwalaRiver.jpg";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import CarouselImage1 from "../assets/hero_1.jpg";
+import CarouselImage2 from "../assets/hero_3.jpg";
+import CarouselImage3 from "../assets/hero_2.jpg";
 
 const Hero = () => {
   return (
     <div className="bg-black">
-      <Carousel className="m-2">
+      <Carousel className="m-5">
         <Carousel.Item interval={3000}>
-          <img
+          <div
             className="d-block w-100"
-            src={CarouselImage1}
-            alt="First slide"
+            style={{
+              backgroundImage: `url(${CarouselImage1})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "600px",
+            }}
           />
           <Carousel.Caption
             style={{
               bottom: "50%",
               transform: "translateY(50%)",
               textAlign: "center",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "10px",
               borderRadius: "10px",
             }}
@@ -46,17 +51,21 @@ const Hero = () => {
         </Carousel.Item>
 
         <Carousel.Item interval={3000}>
-          <img
+          <div
             className="d-block w-100"
-            src={CarouselImage2}
-            alt="Second slide"
+            style={{
+              backgroundImage: `url(${CarouselImage2})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "600px",
+            }}
           />
           <Carousel.Caption
             style={{
               bottom: "50%",
               transform: "translateY(50%)",
               textAlign: "center",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "10px",
               borderRadius: "10px",
             }}
@@ -80,17 +89,21 @@ const Hero = () => {
         </Carousel.Item>
 
         <Carousel.Item interval={3000}>
-          <img
+          <div
             className="d-block w-100"
-            src={CarouselImage3}
-            alt="Third slide"
+            style={{
+              backgroundImage: `url(${CarouselImage3})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "600px",
+            }}
           />
           <Carousel.Caption
             style={{
               bottom: "50%",
               transform: "translateY(50%)",
               textAlign: "center",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "10px",
               borderRadius: "10px",
             }}

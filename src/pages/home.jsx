@@ -58,6 +58,15 @@ const Home = () => {
           reality!
         </p>
       </div>
+      <div className="m-5">
+        <h4 className="text-info">Matara</h4>
+        <div className="ratio ratio-16x9 py-5">
+          <video width="320" height="240" controls>
+            <source src="/Intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
       <div className="container my-5 d-flex justify-content-center">
         <div className="col-md-4 mb-4">
           <div
