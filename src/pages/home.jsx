@@ -14,26 +14,20 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [visitCount, setVisitCount] = useState(0);
-  const today = new Date().toISOString().split("T")[0];
 
   useEffect(() => {
-    const userVisited = localStorage.getItem(`userVisited_${today}`);
-    let currentCount = localStorage.getItem(`visitCount_${today}`);
-    let totalCount = localStorage.getItem("totalVisitCount");
+    const userVisited = localStorage.getItem("userVisited");
+    let currentCount = localStorage.getItem("visitCount");
 
     if (!userVisited) {
+      // If the user hasn't been counted, increment the visit count
       if (currentCount) {
         currentCount = parseInt(currentCount) + 1;
       } else {
         currentCount = 1;
       }
-      localStorage.setItem(`visitCount_${today}`, currentCount);
-      localStorage.setItem(`userVisited_${today}`, "true");
-
-      // Update total visit count
-      totalCount = totalCount ? parseInt(totalCount) + 1 : 1;
-      localStorage.setItem("totalVisitCount", totalCount);
-      console.log(`Updated total visit count: ${totalCount}`); // Debugging line
+      localStorage.setItem("visitCount", currentCount);
+      localStorage.setItem("userVisited", "true");
     } else {
       currentCount = parseInt(currentCount);
     }

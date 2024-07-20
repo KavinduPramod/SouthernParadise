@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import "chart.js/auto";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function VisitGraph() {
   const [data, setData] = useState({
@@ -29,12 +30,8 @@ function VisitGraph() {
       visitCounts.unshift(visitCount ? parseInt(visitCount) : 0);
       labels.unshift(dateString);
     }
-
-    // Get total visit count from local storage
-    const totalCount = localStorage.getItem("totalVisitCount");
-    console.log(totalCount);
-    console.log(visitCounts);
-    setTotalVisitCount(totalCount);
+    const totalVisitCounts = visitCounts.reduce((a, b) => a + b, 0);
+    setTotalVisitCount(totalVisitCounts);
 
     setData({
       labels: labels,
@@ -51,11 +48,15 @@ function VisitGraph() {
   }, []);
 
   return (
-    <div className="container my-5 h-1/2">
-      <div className="VisitGraph">
-        <h2>Daily Visits Graph</h2>
-        <Line data={data} />
-        <p>Total visits across all time: {totalVisitCount}</p>
+    <div className="container my-5" style={{ width: "50vw", height: "50vh" }}>
+      <div className="row h-100 align-items-center justify-content-center">
+        <div className="col-12 h-100 d-flex flex-column align-items-center justify-content-center">
+          <h2>Total Visitor Count: {totalVisitCount}</h2>
+          <h3>Daily Visits Graph</h3>
+          <div style={{ width: "100%", height: "100%" }}>
+            <Line data={data} options={{ maintainAspectRatio: false }} />
+          </div>
+        </div>
       </div>
     </div>
   );
