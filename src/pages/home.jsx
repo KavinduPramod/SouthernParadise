@@ -10,8 +10,31 @@ import ParaviDuwaImg from "../assets/paraviDuwa.jpg";
 import PropertyImage from "../assets/property.jpeg";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    const today = new Date().toISOString().split("T")[0];
+    const userVisited = localStorage.getItem(`userVisited_${today}`);
+    let currentCount = localStorage.getItem(`visitCount_${today}`);
+
+    if (!userVisited) {
+      // If the user hasn't been counted today, increment the visit count
+      if (currentCount) {
+        currentCount = parseInt(currentCount) + 1;
+      } else {
+        currentCount = 1;
+      }
+      localStorage.setItem(`visitCount_${today}`, currentCount);
+      localStorage.setItem(`userVisited_${today}`, "true");
+    } else {
+      currentCount = parseInt(currentCount);
+    }
+
+    setVisitCount(currentCount);
+  }, []);
   return (
     <div className="bg-black text-light">
       <Navbar />
