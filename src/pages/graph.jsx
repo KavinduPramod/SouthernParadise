@@ -29,8 +29,12 @@ function VisitGraph() {
       visitCounts.unshift(visitCount ? parseInt(visitCount) : 0);
       labels.unshift(dateString);
     }
-    const totalVisitCounts = visitCounts.reduce((a, b) => a + b, 0);
-    setTotalVisitCount(totalVisitCounts);
+
+    // Get total visit count from local storage
+    const totalCount = localStorage.getItem("totalVisitCount");
+    console.log(totalCount);
+    console.log(visitCounts);
+    setTotalVisitCount(totalCount);
 
     setData({
       labels: labels,
@@ -47,11 +51,11 @@ function VisitGraph() {
   }, []);
 
   return (
-    <div className="container my-5 h-50">
+    <div className="container my-5 h-1/2">
       <div className="VisitGraph">
-        <h2>Total Visitor Count: {totalVisitCount}</h2>
-        <h3>Daily Visits Graph</h3>
+        <h2>Daily Visits Graph</h2>
         <Line data={data} />
+        <p>Total visits across all time: {totalVisitCount}</p>
       </div>
     </div>
   );
